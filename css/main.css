@@ -147,7 +147,6 @@ header .main-menu li a {
     margin-right : 20px;
     font-weight: 600;
  
-
 }
 
 header .main-menu li a:hover{
@@ -267,9 +266,59 @@ footer{
 }
 
 /* MEDIA */
-@media (max-width:1024px){
+@media (max-width:1023px){
     header.section .container{
         max-width : none;
-
+        height : auto;
+        padding : 0 20px;
     }
+
+    header .logo{
+        padding : 12px 0;
+    }
+    
+
+    header .menu-group{
+        display: block;
+    }
+
+
+    header .main-menu{
+        display: block;
+        text-align: center;
+        margin : 10px;
+        margin-bottom: 30px;
+    }
+    header .toggle {
+        display: none;
+    }
+
+    header .toggle.on{
+        display: block;
+    }
+
+    header .main-menu li{
+        border-bottom : 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    header .main-menu li a{
+        padding : 14px;
+    }
+
+    header .logo {
+        padding : 12px 0;
+    }
+
+    #toggle-btn{
+        text-indent : -9999px;
+        width : 34px;
+        height : 34px;
+        position : absolute;
+        top : 24px;
+        right : 24px;
+        cursor: pointer;
+        background-repeat : no-repeat;
+        background: url("../images/menu-24px.svg");
+    }
+
 }
